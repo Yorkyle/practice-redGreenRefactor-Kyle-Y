@@ -42,11 +42,16 @@ describe("countVowels tests", () => {
     expect(countVowels("")).toBe(0);
   });
 
-  test("AEIOU has 5 vowels (case-sensitive) if edge", () => {
+  test("AEIOU has 5 vowels (case-insensitivity) if edge", () => {
     expect(countVowels("AEIOU")).toBe(5);
   });
 
-  test("\'Y\' or \'y\' counts as a vowel if AEIOU absent (edge)", () => {
+  test("'Y' or 'y' count as a vowel if AEIOU absent (edge)", () => {
     expect(countVowels("why")).toBe(1);
+  });
+
+  test("'Y' or 'y' are NOT counted when A/E/I/O/U are present (edge/negative)", () => {
+    expect(countVowels("yellow")).toBe(2); // e,o only
+    expect(countVowels("yummy")).toBe(1); // u only
   });
 });
