@@ -1,0 +1,23 @@
+{
+  "name": "practice-redgreenrefactor-kyle-y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yorkyle/practice-redGreenRefactor-Kyle-Y.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yorkyle/practice-redGreenRefactor-Kyle-Y/issues"
+  },
+  "homepage": "https://github.com/Yorkyle/practice-redGreenRefactor-Kyle-Y#readme",
+  "dependencies": {
+    "jest": "^30.1.3"
+  }
+}
